@@ -11,7 +11,7 @@ function showGreeting(username) {
     fadeOut(GREETING);
 
     setTimeout(() => {
-      GREETING.innerText = `Hello, ${username}!`;
+      GREETING.innerText = `Xin chào, ${username}!`;
       fadeIn(GREETING, { isAfterOut: true });
     }, TRANSITION_DURATION);
   }, TRANSITION_DURATION);
@@ -50,14 +50,14 @@ function askForUsername() {
       fadeIn(loginFormBackground, { isSlow: true });
       fadeIn(loginForm, { isSlow: true });
 
-      changeMessage("focus", "Press 'Enter' to confirm");
-      changeMessage("blur", "You can always change it later.");
+      changeMessage("focus", "Nhấn 'Enter' để xác nhận");
+      changeMessage("blur", "Bạn có thể thay đổi saun này.");
     }, TRANSITION_DURATION);
 
     loginForm.addEventListener("submit", handleLogInSubmit);
   } else {
     enableButtons(); // In nav-bar.js
-    GREETING.innerText = `Hello, ${savedUsername}!`;
+    GREETING.innerText = `Xin chào, ${savedUsername}!`;
   }
 }
 
