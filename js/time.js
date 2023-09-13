@@ -71,7 +71,7 @@ function updateDate(currentTime, { isToDoDate } = {}) {
   const currentDate = currentTime.getDate();
   const currentYear = currentTime.getFullYear();
 
-  const dateToShow = `${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}`;
+  const dateToShow = `${currentDay}, ${currentDate} ${currentMonth}, ${currentYear}`;
   if (isToDoDate) {
     TO_DO_DATE.innerText = dateToShow;
   } else {
