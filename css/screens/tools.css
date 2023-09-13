@@ -84,6 +84,8 @@
     -webkit-box-sizing: border-box;
     border-radius: 5px;
     transition: .3s
+    width: 150%;
+    height: 150%;
 }
 
 .background__tools .tools-list__list::-webkit-scrollbar,
