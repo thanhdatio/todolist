@@ -35,6 +35,10 @@ function _switchScreens(currentScreen, newScreen) {
     isOnHomeScreen = false;
   } else if (currentScreen === TO_DO_SCREEN) {
     isOnToDoScreen = false;
+  } else if (currentScreen === TOOLS_SCREEN) {
+    isOnToolsScreen = false;
+  } else if (currentScreen === WEB_SCREEN) {
+    isOnWebScreen = false;
   } else {
     isOnSettingScreen = false;
   }
@@ -43,6 +47,8 @@ function _switchScreens(currentScreen, newScreen) {
 function switchScreens({
   isHomeClicked,
   isToDoClicked,
+  isToolsClicked,
+  isWebClicked,
   isSettingClicked,
 } = {}) {
   let currentScreen;
@@ -51,6 +57,10 @@ function switchScreens({
     currentScreen = homeScreen;
   } else if (isOnToDoScreen) {
     currentScreen = TO_DO_SCREEN;
+  } else if (isOnToolsScreen) {
+    currentScreen = TOOLS_SCREEN;
+  } else if (isOnWebScreen) {
+    currentScreen = WEB_SCREEN;
   } else {
     currentScreen = settingScreen;
   }
@@ -65,19 +75,31 @@ function switchScreens({
   if (isHomeClicked && !isOnHomeScreen) {
     _switchScreens(currentScreen, homeScreen);
     isOnHomeScreen = true;
-    switchButtons(homeButton, [toDoButton, settingButton]);
+    switchButtons(homeButton, [toDoButton, toolsButton, webButton, settingButton]);
   }
 
   if (isToDoClicked && !isOnToDoScreen) {
     _switchScreens(currentScreen, TO_DO_SCREEN);
     isOnToDoScreen = true;
-    switchButtons(toDoButton, [homeButton, settingButton]);
+    switchButtons(toDoButton, [homeButton, toolsButton, webButton, settingButton]);
+  }
+
+  if (isToolsClicked && !isOnToolsScreen) {
+    _switchScreens(currentScreen, TOOLS_SCREEN);
+    isOnToolsScreen = true;
+    switchButtons(toolsButton, [homeButton, toDoButton, webButton, settingButton]);
+  }
+
+  if (isWebClicked && !isOnWebScreen) {
+    _switchScreens(currentScreen, WEB_SCREEN);
+    isOnWebScreen = true;
+    switchButtons(webButton, [homeButton, toDoButton, toolsButton, settingButton]);
   }
 
   if (isSettingClicked && !isOnSettingScreen) {
     _switchScreens(currentScreen, settingScreen);
     isOnSettingScreen = true;
-    switchButtons(settingButton, [homeButton, toDoButton]);
+    switchButtons(settingButton, [homeButton, toDoButton, toolsButton, webButton]);
   }
 }
 
@@ -93,6 +115,14 @@ function handleHomeClick() {
   switchScreens({ isHomeClicked: true });
 }
 
+function handleToolsClick() {
+  switchScreens({ isToolsClicked: true });
+}
+
+function handleWebClick() {
+  switchScreens({ isWebClicked: true });
+}
+
 function enableButtons() {
   navigationBar.classList.add("signed-in");
 
@@ -100,6 +130,8 @@ function enableButtons() {
 
   homeButton.addEventListener(CLICK_EVENT, handleHomeClick);
   toDoButton.addEventListener(CLICK_EVENT, handleToDoClick);
+  toolsButton.addEventListener(CLICK_EVENT, handleToolsClick);
+  webButton.addEventListener(CLICK_EVENT, handleWebClick);
   settingButton.addEventListener(CLICK_EVENT, handleSettingClick);
 
   smileButton.addEventListener("mouseover", () => {
