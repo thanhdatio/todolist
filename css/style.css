@@ -10,7 +10,6 @@
 @import "screens/to-do.css";
 @import "screens/tools.css";
 @import "screens/settings.css";
-@import "main.css";
 
 html {
   font-size: calc(1vw + 5px);
