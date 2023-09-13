@@ -18,6 +18,10 @@ const CURRENT_SCREEN_CLASSNAME = "current-screen";
 
 let isOnHomeScreen = true;
 let isOnToDoScreen = false;
+let isOnToolsScreen = false;
+let isOnWebScreen = false;
+let isOnMusicScreen = false;
+let isOnRelaxScreen = false;
 let isOnSettingScreen = false;
 
 function _switchScreens(currentScreen, newScreen) {
