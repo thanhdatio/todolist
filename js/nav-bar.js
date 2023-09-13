@@ -6,6 +6,10 @@ const settingScreen = document.querySelector(".js-background__setting");
 const navigationBar = document.querySelector(".js-background__navigation");
 const homeButton = navigationBar.querySelector("div li:first-child button");
 const toDoButton = navigationBar.querySelector("div li:nth-child(2) button");
+const toolsButton = navigationBar.querySelector("div li:nth-child(3) button");
+const webButton = navigationBar.querySelector("div li:nth-child(4) button");
+const musicButton = navigationBar.querySelector("div li:nth-child(5) button");
+const relaxButton = navigationBar.querySelector("div li:nth-child(6) button");
 const settingButton = navigationBar.querySelector("div li:last-child button");
 const smileButton = navigationBar.querySelector(".js-navigation__smile-button");
 
