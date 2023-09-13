@@ -8,6 +8,7 @@
 @import "screens/sign-in.css";
 @import "screens/background.css";
 @import "screens/to-do.css";
+@import "screens/tools.css";
 @import "screens/settings.css";
 
 html {
