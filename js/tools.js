@@ -1,26 +1,26 @@
-const toDoForm = TO_DO_SCREEN.querySelector(".js-to-do-list__form");
-const toDoCounter = toDoForm.querySelector(".js-form__counter");
-const toDoInput = toDoForm.querySelector("input");
-const toDoList = TO_DO_SCREEN.querySelector(".js-to-do-list__list");
+const toolsForm = TOOLS_SCREEN.querySelector(".js-tool-list__form");
+const toolsCounter = toolsForm.querySelector(".js-form__counter");
+const toolsInput = toolsForm.querySelector("input");
+const toolsList = TOOLS_SCREEN.querySelector(".js-tools-list__list");
 
-const TODOS_KEY = "to-dos";
+const TOOLS_KEY = "tools";
 
-let toDos = [];
+let tools = [];
 
-function saveToDos() {
-  localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+function saveTools() {
+  localStorage.setItem(TOOLS_KEY, JSON.stringify(tools));
 }
 
-function updateCounter() {
-  const toDoCount = String(toDos.length).padStart(2, "0");
+//function updateCounter() {
+//  const toolsCount = String(tools.length).padStart(2, "0");
 
-  const checkedToDos = toDos.filter((toDo) => toDo.isChecked === true);
-  const checkedCount = String(checkedToDos.length).padStart(2, "0");
+//  const checkedTools = toDos.filter((toDo) => toDo.isChecked === true);
+//  const checkedCount = String(checkedToDos.length).padStart(2, "0");
 
-  toDoCounter.innerText = `${checkedCount}/${toDoCount} Xong`;
-}
+//  toDoCounter.innerText = `${checkedCount}/${toDoCount} Xong`;
+//}
 
-function deleteTodo(event) {
+/*function deleteTodo(event) {
   const li = event.target.parentElement;
 
   fadeOut(li, { isAfterIn: true }); // Is always after fading in
@@ -33,11 +33,11 @@ function deleteTodo(event) {
 
   updateCounter();
 }
-
-function showToDo(newToDo) {
+*/
+/*function showTools(newTools) {
   const li = document.createElement("li");
-  li.id = newToDo.id;
-  li.classList.add("list__to-do");
+  li.id = newTools.id;
+  li.classList.add("list__tools");
 
   const span = document.createElement("span");
   span.innerText = newToDo.text;
@@ -76,7 +76,8 @@ function showToDo(newToDo) {
 
   updateCounter();
 }
-
+*/
+/*
 function handleToDoSubmit(event) {
   event.preventDefault();
 
@@ -113,3 +114,4 @@ setTimeout(() => {
 showSavedToDos();
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
+*/
