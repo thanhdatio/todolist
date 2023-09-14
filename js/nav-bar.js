@@ -39,6 +39,8 @@ function _switchScreens(currentScreen, newScreen) {
     isOnToolsScreen = false;
   } else if (currentScreen === WEB_SCREEN) {
     isOnWebScreen = false;
+  } else if (currentScreen === RELAX_SCREEN) {
+    isOnRelaxScreen = false;
   } else {
     isOnSettingScreen = false;
   }
@@ -49,6 +51,7 @@ function switchScreens({
   isToDoClicked,
   isToolsClicked,
   isWebClicked,
+  isRelaxClicked,
   isSettingClicked,
 } = {}) {
   let currentScreen;
@@ -61,6 +64,8 @@ function switchScreens({
     currentScreen = TOOLS_SCREEN;
   } else if (isOnWebScreen) {
     currentScreen = WEB_SCREEN;
+  } else if (isOnRelaxScreen) {
+    currentScreen = RELAX_SCREEN;
   } else {
     currentScreen = settingScreen;
   }
@@ -75,31 +80,37 @@ function switchScreens({
   if (isHomeClicked && !isOnHomeScreen) {
     _switchScreens(currentScreen, homeScreen);
     isOnHomeScreen = true;
-    switchButtons(homeButton, [toDoButton, toolsButton, webButton, settingButton]);
+    switchButtons(homeButton, [toDoButton, toolsButton, webButton, relaxButton, settingButton]);
   }
 
   if (isToDoClicked && !isOnToDoScreen) {
     _switchScreens(currentScreen, TO_DO_SCREEN);
     isOnToDoScreen = true;
-    switchButtons(toDoButton, [homeButton, toolsButton, webButton, settingButton]);
+    switchButtons(toDoButton, [homeButton, toolsButton, webButton, relaxButton, settingButton]);
   }
 
   if (isToolsClicked && !isOnToolsScreen) {
     _switchScreens(currentScreen, TOOLS_SCREEN);
     isOnToolsScreen = true;
-    switchButtons(toolsButton, [homeButton, toDoButton, webButton, settingButton]);
+    switchButtons(toolsButton, [homeButton, toDoButton, webButton, relaxButton, settingButton]);
   }
 
   if (isWebClicked && !isOnWebScreen) {
     _switchScreens(currentScreen, WEB_SCREEN);
     isOnWebScreen = true;
-    switchButtons(webButton, [homeButton, toDoButton, toolsButton, settingButton]);
+    switchButtons(webButton, [homeButton, toDoButton, toolsButton, relaxButton, settingButton]);
+  }
+
+  if (isRelaxClicked && !isOnRelaxScreen) {
+    _switchScreens(currentScreen, RELAX_SCREEN);
+    isOnRelaxScreen = true;
+    switchButtons(relaxButton, [homeButton, toDoButton, toolsButton, webButton, settingButton]);
   }
 
   if (isSettingClicked && !isOnSettingScreen) {
     _switchScreens(currentScreen, settingScreen);
     isOnSettingScreen = true;
-    switchButtons(settingButton, [homeButton, toDoButton, toolsButton, webButton]);
+    switchButtons(settingButton, [homeButton, toDoButton, toolsButton, webButton, relaxButton]);
   }
 }
 
@@ -123,6 +134,10 @@ function handleWebClick() {
   switchScreens({ isWebClicked: true });
 }
 
+function handleRelaxClick() {
+  switchScreens({ isRelaxClicked: true });
+}
+
 function enableButtons() {
   navigationBar.classList.add("signed-in");
 
@@ -132,6 +147,7 @@ function enableButtons() {
   toDoButton.addEventListener(CLICK_EVENT, handleToDoClick);
   toolsButton.addEventListener(CLICK_EVENT, handleToolsClick);
   webButton.addEventListener(CLICK_EVENT, handleWebClick);
+  relaxButton.addEventListener(CLICK_EVENT, handleRelaxClick);
   settingButton.addEventListener(CLICK_EVENT, handleSettingClick);
 
   smileButton.addEventListener("mouseover", () => {
