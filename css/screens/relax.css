@@ -9,7 +9,7 @@
     font-family: 'Lato', sans-serif;
     height: 100vh;
     width: 100vw;
-    background: rgb(166, 89, 161) url('pexels.jpg') no-repeat center center/cover;
+    /*background: rgb(166, 89, 161) url('pexels.jpg') no-repeat center center/cover;*/
     display: flex;
     flex-flow: column;
     align-items: center;
