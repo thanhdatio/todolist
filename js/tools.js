@@ -1,4 +1,4 @@
-const toolsForm = TOOLS_SCREEN.querySelector(".js-tools-list__form");
+/*const toolsForm = TOOLS_SCREEN.querySelector(".js-tools-list__form");
 const toolsCounter = toolsForm.querySelector(".js-form__counter");
 const toolsInput = toolsForm.querySelector("input");
 const toolsList = TOOLS_SCREEN.querySelector(".js-tools-list__list");
@@ -10,7 +10,7 @@ let tools = [];
 function saveTools() {
   localStorage.setItem(TOOLS_KEY, JSON.stringify(tools));
 }
-
+*/
 //function updateCounter() {
 //  const toolsCount = String(tools.length).padStart(2, "0");
 
