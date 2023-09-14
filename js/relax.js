@@ -11,14 +11,14 @@ const holdTime = (totalTime/4.8);
 breathAnimate();
 
 function breathAnimate() {
-    text.innerText= 'Breathe In';
+    text.innerText= 'HÍT VÀO';
     container.className = 'container grow';
 
     setTimeout(() => {
-        text.innerText= 'Hold';
+        text.innerText= 'GIỮ HƠI';
 
         setTimeout(() => {
-            text.innerText= 'Breathe Out';
+            text.innerText= 'THỞ RA';
             container.className = 'container shrink';
         }, holdTime)
     }, breathTime)
