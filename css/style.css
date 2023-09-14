@@ -1,6 +1,6 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
-@import "screens/relax.css";
+
 @import "reset.css";
 @import "variables.css";
 @import "transition.css";
@@ -9,7 +9,7 @@
 @import "screens/sign-in.css";
 @import "screens/background.css";
 @import "screens/to-do.css";
-
+@import "screens/relax.css";
 @import "screens/settings.css";
 
 html {
