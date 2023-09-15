@@ -23,7 +23,7 @@ h1{
     word-spacing: 0.4em;
     color: #f8f0f8;
 }
-*/
+
 .container{
     display: flex;
     justify-self: center;
@@ -34,7 +34,7 @@ h1{
     width: 20em;
     transform: scale(1);
     position: relative;
-}
+}*/
 .circle{
     background-color: rgb(166, 89, 161);
     height: 100%;
