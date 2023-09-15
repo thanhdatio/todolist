@@ -17,7 +17,7 @@ function updateCounter() {
   const checkedToDos = toDos.filter((toDo) => toDo.isChecked === true);
   const checkedCount = String(checkedToDos.length).padStart(2, "0");
 
-  toDoCounter.innerText = `${checkedCount}/${toDoCount} Done`;
+  toDoCounter.innerText = `${checkedCount}/${toDoCount} Xong`;
 }
 
 function deleteTodo(event) {
