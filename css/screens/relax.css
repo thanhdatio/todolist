@@ -23,15 +23,15 @@ h1{
 }
 
 .container{
-    /*display: flex;
+    display: flex;
     justify-self: center;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
     margin: auto;
-    height: 20em;
+    /*height: 20em;
     width: 20em;
     transform: scale(1);
-    position: relative;
+    position: relative;*/
 }
 .circle{
     background-color: rgb(166, 89, 161);
