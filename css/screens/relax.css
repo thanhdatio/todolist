@@ -27,11 +27,11 @@ h1{
     justify-self: center;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    /*margin: auto;
     height: 20em;
-    width: 20em;
-    /*transform: scale(1);*/
-    position: relative;
+    width: 20em;*/
+    transform: scale(1);
+    /*position: relative;*/
 }
 .circle{
     background-color: rgb(166, 89, 161);
