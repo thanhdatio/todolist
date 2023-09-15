@@ -27,10 +27,10 @@ h1{
     justify-self: center;
     justify-content: center;
     align-items: center;
-    /*margin: auto;*/
+    margin: auto;
     height: 20em;
     width: 20em;
-    transform: scale(1);
+    /*transform: scale(1);*/
     position: relative;
 }
 .circle{
