@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
 }
-*/
+
 .relax{
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -22,6 +22,7 @@ h1{
     color: #f8f0f8;
 }
 */
+/*
 .container{
     display: flex;
     justify-self: center;
@@ -33,7 +34,7 @@ h1{
     transform: scale(1);
     position: relative;
 }
-
+*/
 .circle{
     background-color: rgb(166, 89, 161);
     height: 100%;
@@ -116,7 +117,7 @@ h1{
         transform: scale(1);
     }
 }
-
+/*
 .toggle{
     position: absolute;
     top: 1em;
@@ -160,3 +161,4 @@ h1{
         height: 10.4em;
     }
 }
+*/
