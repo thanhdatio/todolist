@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   margin: auto 0.5em;
+  margin-top: 100px;
   /*position: fixed;*/
 }
 
