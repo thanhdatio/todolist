@@ -25,7 +25,7 @@
   flex-direction: column;
   justify-content: center;
   margin: auto 0.5em;
-  position: fixed;
+  /*position: fixed;*/
 }
 
 .background .background__home main .home__date,
