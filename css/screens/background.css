@@ -30,10 +30,12 @@
 .background .background__home main .home__date,
 .background .background__home main .home__clock .clock__am-pm {
   text-transform: uppercase;
+  position: fixed;
 }
 
 .background .background__home main .home__clock {
   display: flex;
+  position: fixed;
 }
 
 .background .background__home main .home__date {
@@ -45,15 +47,18 @@
   font-size: 9rem;
   font-weight: bold;
   margin-right: 0.1em;
+  position: fixed;
 }
 
 .background .background__home main .home__clock .clock__am-pm {
   font-size: 3.5rem;
   margin-top: 0.2em;
+  position: fixed;
 }
 
 .background .background__home main .home__greeting {
   font-size: 1.5rem;
+  position: fixed;
 }
 
 .background .background__home .home__weather {
