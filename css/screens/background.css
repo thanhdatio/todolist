@@ -26,7 +26,6 @@
   justify-content: center;
   margin: auto 0.5em;
   /*margin-top: 100px;*/
-  position: fixed;
 }
 
 .background .background__home main .home__date,
@@ -124,6 +123,7 @@
 }
 
 .background .background__to-do,
+.background .background__home main,
 .background .background__setting {
   position: fixed;
 }
