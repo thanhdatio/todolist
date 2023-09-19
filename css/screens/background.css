@@ -20,12 +20,11 @@
 
 /* Home */
 .background .background__home main {
-  align-items: left;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto 0.5em;
-  vertical-align: middle;
 }
 
 .background .background__home .home__date,
