@@ -31,6 +31,7 @@
 .background .background__home main .home__date,
 .background .background__home main .home__clock .clock__am-pm {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .background .background__home main .home__clock {
@@ -55,6 +56,7 @@
 
 .background .background__home main .home__greeting {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .background .background__home .home__weather {
