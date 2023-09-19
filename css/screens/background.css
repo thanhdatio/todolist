@@ -24,8 +24,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto 0;
-  text-align: center;
+  margin: auto 0.5em;
+  vertical-align: middle;
 }
 
 .background .background__home main .home__date,
