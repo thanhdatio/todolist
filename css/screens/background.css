@@ -56,7 +56,8 @@
 
 .background .background__home main .home__greeting {
   font-size: 1.5rem;
-  text-align: center;
+  /*text-align: center;*/
+  text-align: left;
 }
 
 .background .background__home .home__weather {
