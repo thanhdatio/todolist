@@ -33,7 +33,6 @@ h1{
     width: 20em;
     transform: scale(1);
     position: relative;
-    display: flex;
 }
 .circle{
     background-color: rgb(166, 89, 161);
