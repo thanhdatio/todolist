@@ -1,3 +1,9 @@
+const toDoForm = TO_DO_SCREEN.querySelector(".js-to-do-list__form");
+const toDoCounter = toDoForm.querySelector(".js-form__counter");
+const toDoInput = toDoForm.querySelector("input");
+const toDoList = TO_DO_SCREEN.querySelector(".js-to-do-list__list");
+
+
 /*const toolsForm = TOOLS_SCREEN.querySelector(".js-tools-list__form");
 const toolsCounter = toolsForm.querySelector(".js-form__counter");
 const toolsInput = toolsForm.querySelector("input");
