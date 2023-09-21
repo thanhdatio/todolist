@@ -27,7 +27,7 @@ function breathAnimate() {
 setInterval(breathAnimate, totalTime);
 
 audio.muted = true;
-toggleSoundBtn.addEventListener('click', () => {
+/*toggleSoundBtn.addEventListener('click', () => {
     audio.play(); 
   audio.muted = !audio.muted;
-});
+});*/
