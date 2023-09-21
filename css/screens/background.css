@@ -124,6 +124,8 @@
 }
 
 .background .background__to-do,
+.background .background__relax,
+.background .background__tools,
 .background .background__home main,
 .background .background__setting {
   position: fixed;
