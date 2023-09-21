@@ -34,45 +34,54 @@
   width: 0.1em;
 }
 
-.background__tools .tools__tools-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#delete {
+    border-color: transparent;
 }
 
-.background__tools .tools__tools-list .tools-list__form {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0.5em 0;
-  width: 30em;
+#delete {
+    border-color: transparent;
+    cursor: pointer;
+    z-index: 100;
+    margin-left: -25px;
+    margin-top: -4.5vh;
+    padding-top: 5vh;
+    padding-right: 5px;
+  
 }
 
-.background__tools .tools-list__form input[type="text"] {
-  background-color: var(--gray);
-  border: none;
-  border-radius: 2em;
-  color: var(--white);
-  font: inherit;
-  padding: 0.7em;
-  width: 20em;
+@media screen and (max-width:690px) {
+    #delete {
+        margin-left: 232px;
+        margin-top: -27.2vh;
+    }
 }
 
-.background__tools .tools-list__form input[type="text"]:focus {
-  background-color: var(--dark-gray);
-  outline: none;
-  transition: var(--focus-transition);
+.rig ul li {
+    display: inline;
+    text-align: center
 }
 
-.background__tools .tools-list__form .form__counter {
-  background-color: var(--dark-gray);
-  border-radius: 0.5em;
-  font-size: 1rem;
-  padding: 0.5em;
+/*li {
+    display: list-item
+}*/
+
+/*h1,*/
+ul.rig li {
+    font-family: 'Product Sans', sans-serif
 }
-/*tai day*/
-.background__tools .tools__tools-list .tools-list__list li {
-  background-color: #353535;
+
+ul.rig li {
+    background: #fff
+}
+
+ul.rig {
+    list-style: none;
+    font-size: 0;
+    margin-right: 10%
+}
+
+ul.rig li {
+    background-color: #353535;
     display: inline-block;
     padding: 15px;
     margin: 0 0 2.5% 2.5%;
@@ -86,171 +95,59 @@
     transition: .3s
 }
 
-.background__tools .tools__tools-list .tools-list__list img {
-width: 150px;
-    height: 150px;
+ul.rig li:hover {
+    background: #424242;
+    transition: .3s
 }
 
-.background__tools .tools-list__list::-webkit-scrollbar,
-.background__tools .tools-list__list::-webkit-scrollbar-thumb {
-  border-radius: 0.5em;
-  width: 0.8em;
+ul.rig li img {
+    max-width: 100%;
+    height: 12%;
+    margin: 0 0 13px
 }
 
-.background__tools .tools-list__list::-webkit-scrollbar {
-  background-color: rgba(255, 255, 255, 0.2);
+ul.rig li h3 {
+    margin: 0 0 5px
 }
 
-.background__tools .tools-list__list::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.6);
+ul.rig li p {
+    font-size: .9em;
+    line-height: 0;
+    margin: 10px 0 8px;
+    color: #2b2b2b
 }
 
-.background__tools .tools-list__list::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+ul.rig.websites li p {
+    color: #fff;
+    line-height: 0;
+    margin: 10px 0 8px;
+    font-size: 1.5vw
 }
 
-.background__tools .tools-list__list .list__tools {
-  align-items: flex-start;
-  display: flex;
+ul.rig.columns-6 li {
+    cursor: pointer;
+    width: 14.16%
 }
 
-.background__tools .tools-list__list .list__tools:not(:first-child) {
-  margin: 0.7em auto;
-}
+@media screen and (max-width:690px) {
+    ul.rig.columns-6 li {
+        width: auto;
+    }
 
-.background__tools .tools-list__list .list__tools:first-child {
-  margin: auto auto 0.7em auto;
-}
+    ul.rig li {
+        display: list-item;
+        margin: 10%;
+    }
 
-.background__tools .list__tools input[type="button"],
-.background__tools .list__tools input[type="checkbox"] {
-  cursor: pointer;
-  min-height: 1.45em;
-  min-width: 1.45em;
-}
+    ul.rig.websites li p {
+        font-size: 5vw;
+    }
 
-.background__tools .list__tools input[type="button"] {
-  background: url("../../img/tools/x.png") no-repeat center/80%;
-  border: none;
-  margin: 0.1em 0.2em 0 0;
-  opacity: 0.5;
-}
-
-.background__tools .list__tools input[type="button"]:hover {
-  opacity: 1;
-  transition: var(--hover-transition);
-}
-
-.background__tools .list__tools input[type="checkbox"] {
-  accent-color: var(--toggle-green);
-  margin-top: 0.15em;
-}
-
-.background__tools .tools-list__list .list__tools span {
-  margin-left: 0.5em;
-}
-
-/* JS Class */
-.checked {
-  text-decoration: line-through;
-}
-
-@media screen and (max-width: 962px) {
-  .background__tools .list__tools input[type="button"],
-  .background__tools .list__tools input[type="checkbox"] {
-    min-height: 1.3em;
-    min-width: 1.3em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .background__tools {
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .background__tools .tools__titles .titles__header {
-    margin-right: auto;
-  }
-
-  .background__tools .tools__titles {
-    flex-direction: column;
-  }
-
-  .background__tools .tools__titles .titles__divider {
-    height: 0.1em;
-    margin: 1em auto 0.5em auto;
-    width: 80vw;
-  }
-
-  .background__tools .tools__tools-list .tools-list__list {
-    height: 60vh;
-    width: 80vw;
-  }
-
-  .background__tools .list__tools input[type="button"],
-  .background__tools .list__tools input[type="checkbox"] {
-    min-height: 1.1em;
-    min-width: 1.1em;
-  }
-
-  .background__tools .list__tools input[type="button"] {
-    margin-top: -0.2em;
-  }
-
-  .background__tools .list__tools input[type="checkbox"] {
-    margin-top: -0.1em;
-  }
-}
-
-@media screen and (max-width: 601px) {
-  .background__tools .list__tools input[type="button"],
-  .background__tools .list__tools input[type="checkbox"] {
-    margin-top: 0;
-    min-height: 1em;
-    min-width: 1em;
-  }
-
-  .background__tools .list__tools input[type="button"] {
-    margin-top: -0.21em;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .background__tools .list__tools input[type="button"],
-  .background__tools .list__tools input[type="checkbox"] {
-    min-height: 0.9em;
-    min-width: 0.9em;
-  }
-
-  .background__tools .list__tools input[type="button"] {
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .background__tools .tools__tools-list .tools-list__form {
-    width: 28em;
-  }
-
-  .background__tools .tools-list__form .form__counter {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 272px) {
-  .background__tools .tools__tools-list .tools-list__form {
-    width: 27em;
-  }
-
-  .background__tools .tools-list__form .form__counter {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (max-width: 260px) {
-  .background__tools {
-    display: none;
-  }
+    .form-control,
+    input[type=password],
+    input[type=select],
+    input[type=text] {
+        padding: 0px 25px !important;
+        margin: 0;
+    }
 }
