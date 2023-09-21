@@ -34,6 +34,21 @@
   width: 0.1em;
 }
 
+.background__tools .tools__tools-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.background__tools .tools__tools-list .tools-list__list {
+  font-size: 1.1rem;
+  height: 72vh;
+  margin: 0.5em auto 0.5em auto;
+  overflow-y: auto;
+  width: 55vw;
+  word-break: break-all;
+}
+
 #delete {
     border-color: transparent;
 }
@@ -56,7 +71,7 @@
     }
 }
 
-.rig ul li {
+.background__tools .tools__tools-list .tools-list__list .rig ul li {
     display: inline;
     text-align: center
 }
@@ -66,21 +81,21 @@
 }*/
 
 /*h1,*/
-ul.rig li {
+.background__tools .tools__tools-list .tools-list__list ul.rig li {
     font-family: 'Product Sans', sans-serif
 }
 
-ul.rig li {
+.background__tools .tools__tools-list .tools-list__list ul.rig li {
     background: #fff
 }
 
-ul.rig {
+.background__tools .tools__tools-list .tools-list__list ul.rig {
     list-style: none;
     font-size: 0;
     margin-right: 10%
 }
 
-ul.rig li {
+.background__tools .tools__tools-list .tools-list__list ul.rig li {
     background-color: #353535;
     display: inline-block;
     padding: 15px;
@@ -95,36 +110,36 @@ ul.rig li {
     transition: .3s
 }
 
-ul.rig li:hover {
+.background__tools .tools__tools-list .tools-list__list ul.rig li:hover {
     background: #424242;
     transition: .3s
 }
 
-ul.rig li img {
+.background__tools .tools__tools-list .tools-list__list ul.rig li img {
     max-width: 100%;
     height: 12%;
     margin: 0 0 13px
 }
 
-ul.rig li h3 {
+.background__tools .tools__tools-list .tools-list__list ul.rig li h3 {
     margin: 0 0 5px
 }
 
-ul.rig li p {
+.background__tools .tools__tools-list .tools-list__list ul.rig li p {
     font-size: .9em;
     line-height: 0;
     margin: 10px 0 8px;
     color: #2b2b2b
 }
 
-ul.rig.websites li p {
+.background__tools .tools__tools-list .tools-list__list ul.rig.websites li p {
     color: #fff;
     line-height: 0;
     margin: 10px 0 8px;
     font-size: 1.5vw
 }
 
-ul.rig.columns-6 li {
+.background__tools .tools__tools-list .tools-list__list ul.rig.columns-6 li {
     cursor: pointer;
     width: 14.16%
 }
