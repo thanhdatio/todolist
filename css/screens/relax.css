@@ -3,6 +3,14 @@
     box-sizing: border-box;
     margin: 0;
 } */
+.background__relax {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-transform: uppercase;
+  z-index: 1;
+}
 
 .relax{
     margin: 0;
