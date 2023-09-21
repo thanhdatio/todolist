@@ -1,8 +1,10 @@
 .background__tools {
+  align-items: center;
   display: flex;
-  height: 100vh;
-  position: relative;
-  width: 85vw;
+  flex-direction: column;
+  justify-content: space-around;
+  text-transform: uppercase;
+  z-index: 1;
 }
 
 .background__tools .tools__titles {
