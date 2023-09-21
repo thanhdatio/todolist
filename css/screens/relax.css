@@ -24,13 +24,13 @@
     color: #fff;
 }
 
-.background__relax h1{
+.background__relax .relax h1{
     margin-top: 1em;
     word-spacing: 0.4em;
     color: #f8f0f8;
 }
 
-.background__relax .container{
+.background__relax .relax .container{
     display: flex;
     justify-self: center;
     justify-content: center;
@@ -41,7 +41,7 @@
     transform: scale(1);
     position: relative;
 }
-.background__relax .circle{
+.background__relax .relax .container .circle{
     background-color: rgb(166, 89, 161);
     height: 100%;
     width: 100%;
@@ -52,11 +52,11 @@
     z-index: -1;
 }
 
-.background__relax .text{
+.background__relax .relax .container .text{
     font-size: 1.2em;
 }
 
-.background__relax .gradient-circle{
+.background__relax .relax .container .gradient-circle{
     background: conic-gradient(
         #cf9ece 0%,
         #cf9ece 35%,
@@ -72,7 +72,7 @@
     position: absolute;
 }
 
-.background__relax .point-container{
+.background__relax .relax .container .point-container{
     width: 1.5em;
     height: 12.5em;
     position: absolute;
@@ -81,7 +81,7 @@
     transform-origin: bottom center;
 }
 
-.background__relax .pointer{
+.background__relax .relax .container .point-container .pointer{
     background-color: #fff;
     height: 1.5em;
     width: 100%;
@@ -123,7 +123,7 @@
     }
 }
 
-.toggle{
+.background__relax .toggle{
     position: absolute;
     top: 1em;
     right: 1em;
