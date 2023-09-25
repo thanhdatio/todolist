@@ -57,7 +57,7 @@ function handleRenameSubmit(event) {
     GREETING.innerText = `Hello, ${newUsername}!`;
     renameForm.reset();
 
-    showModal("Username successfully changed");
+    showModal("Đổi tên thành công!");
   }
 }
 
